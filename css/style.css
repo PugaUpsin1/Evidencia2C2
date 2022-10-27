@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+    margin: 0  ;
+    padding: 0 ;
+}
+#contenedor{
+    background-color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#encabezado img {
+    height: 70px;
+    width: 138px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.menu_list{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.list_item{
+    display: inline-block;
+    list-style: none;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 1.1rem;
+    position: relative;
+}
+.link:after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover:after{
+    width: 100%;
+    right: 0;
+}
+.link:hover{
+    color: violet;
+}
+
+#pie {
+    padding: 15px;
+    text-align: center;
+}
+
+#pie h4 {
+    font-size: 13px;
+    color: white;
+}
+
+/* Pagina de inicio */
+
+.rowindex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexS1{
+    flex-direction: row;
+    flex: 30%;
+    width: 50%;
+    float: left;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 635px;
+}
+.indexS1 img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.indexS2{
+    flex-direction: row;
+    flex: 30%;
+    width: 50%;
+    float: left;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexS2 p{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 2%;
+}
+
+.indexS2 h4 {
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.indexS2 a{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    border-radius: 50px;
+    margin-left: 43%;
+    margin-bottom: 50%;
+}
+
+/*Pagina de empresa*/
+.rowEmpre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ .EmpreS1{
+    display: inline;
+    flex-wrap: wrap;
+    color: white;
+ }
+
+ .EmpreS1 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 10px;
+ }
+
+ .EmpreS1 p {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 117px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+    text-align: justify;
+ }
+ .EmpreS1img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+ }
+ .EmpreS1img img{
+    display: flex;
+    height: 250px;
+    width: 380px;
+ }
+
+ /*Pagina de Productos*/
+
+ .rowProd{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .ProdS1 h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+ }
+ .ProdS1 h2 {
+    color: white;
+    margin-bottom: 10px;
+ }
+.softw{
+    display: flex;
+}
+ .prod1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 230px;
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blueviolet;
+    margin: 5px;
+ }
+
+ .prod1 label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 150px;
+ }
+
+ .btnCompras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    margin-top: 0px;
+    margin-left: 170px;
+ }
+ .prod2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 230px;
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blueviolet;
+    margin: 5px;
+ }
+ 
+ .prod2 label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 100px;
+ }
+
+
+ .prod3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 230px;
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blueviolet;
+    margin: 5px;
+ }
+
+ .hardw{
+    display: flex;
+ }
+
+ .otros{
+    display: flex;
+ }
+
+ .prod3 label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 160px;
+ }
+ .prod1 .label1{
+    padding-right: 161px;
+}
+
+.prod2 .label2{
+    padding-right: 97px;
+}
+
+.prod3 .label3 {
+    padding-right: 164px;
+}
+
+.prod1 .label4 {
+    padding-right: 124px;
+}
+.prod2 .label5 {
+    padding-right: 146px;
+}
+.prod3 .label6 {
+    padding-right: 143px;
+}
+.prod1 .label7{
+   padding-right: 142px;
+}
+.prod2 .label8 {
+    padding-right: 174px;
+}
+.prod3 .label9 {
+    padding-right: 169px;
+}
+ .img-medida {
+    width: 250px;
+    height: 150px;
+ }
+
+ /*Pagina de Contacto*/
+
+ .rowcontact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 55px;
+ }
+
+ .form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+ }
+ .form h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+ .form .Nombre {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .form .Nombre label{
+    margin-left: 1px;
+    margin-right: 6px;
+ }
+ .form .Nombre input{
+    width: 227px;
+ }
+ .form .correo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .form .correo label{
+    margin-left: 10px;
+    margin-right: 6px;
+ }
+ .form .correo input{
+    width: 224px;
+ }
+
+ .form .comen {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+
+ .form .comen label{
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+ .form .comen textarea{
+    width: 214px;
+    height: 127px;
+ }
+ .btnEnviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 265px;
+    margin-bottom: 0px;
+ }
+ input {
+    color: black;
+ }
+@media screen and (max-width: 700px) {
+   .menu_list, .rowindex,.rowEmpre,.EmpreS1img, .rowProd, .softw,.hardw,.otros, .rowcontact, .form, .nombre ,.comen,.comen{
+        flex-direction: column;
+    }
+    
+}
