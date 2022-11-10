@@ -1,0 +1,120 @@
+
+.body-login{
+    background-color: black;
+    max-width: 100%;
+    height: 700px;
+    font-family: sans-serif;
+
+}
+
+.contenedor-login{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lg label {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+#ingresar-lg{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+.lg{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(105, 60, 146);
+
+}
+
+.form-login{
+    padding: 60px;
+}
+
+.form-login .lb1{
+    margin-right: 70px;
+}
+
+.lg h1{
+    padding-top: 30px;
+    padding-left: 200px;
+}
+
+/*Administrador*/
+
+.rowadmin{
+    max-width: 100%;
+    height: 615px;
+    display: flex;
+    color: white;
+}
+.form-product{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 50%;
+}
+.form-product label {
+    font-size: 20px;
+    
+}
+.form-product input{
+    color: white;
+    width: 200px;
+}
+.form-product textarea {
+    color: white;
+    width: 300px;
+    height: 100px;
+}
+
+.form-product select {
+    color: white;
+    width: 200px;
+}
+
+.form-product .lblA1{
+    margin-right: 10px;
+    
+}
+
+.prodimg{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#verimg{
+    height: 200px;
+    width: 200px;
+}
+
+#selecimg{
+    padding-top: 30px;
+    padding-left: 130px;
+}
+.lblimg{
+    margin-top: 50px;
+}
+
+.imglabel{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.botones{
+    display: flex;
+}
+
+.botones button{
+    background-color: red;
+    height: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+}

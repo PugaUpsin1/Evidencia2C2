@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script src="/js/AdminJs.js" type="module"></script>
+    <link rel="stylesheet" href="/css/adminSty.css">
+    <link rel="stylesheet" href="/css/styleEV2C2.css">
+</head>
+<body>
+    <div class="" id="contenedor">
+        <header id="encabezado">
+            <img src="/img/Tecnofull.png" alt="">
+        </header>
+        <nav id="menu">
+            <ul class="menu_list">
+                <li class="list_item"><a href="/html/PF.html" class="link">Inicio</a></li>
+                <li class="list_item"><a href="/html/Empresa.html" class="link">Empresa</a></li>
+                <li class="list_item"><a href="/html/Productos.html" class="link">Producto</a></li>
+                <li class="list_item"><a href="/html/Contactos.html" class="link">Contacto</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="rowadmin">
+
+            <div class="form-product">
+                <h1>PRODUCTOS</h1>
+                <label for="" class="lblA1">ID del Profucto: </label>
+                <input type="number" id="id-prod" placeholder="Ingrese el ID">
+                <br>
+                <label for="" class="lblA2">Nombre: </label>
+                <input type="text" id="nom-prod" placeholder="Ingrese el Nombre de producto">
+                <br>
+                <label for="" class="lblA3">Precio: </label>
+                <input type="number" id="pre-prod" placeholder="Ingrese el Precio">
+                <br>
+                <label for="" class="lblA4">Descripción </label>
+                <textarea name="desc-prd" id="desc-prd" cols="30" rows="10" placeholder="Ingrese la descripcion"></textarea>
+                <br>
+                <label for="" class="lblA3">Estatus </label>
+                <input type="number" id="Estatus" placeholder="Ingrese el Precio" >
+                <br>
+                <h4>Seccion </h4>
+                <select name="Seccion" id="SeccionProducto">
+                    <option value="1">Software</option>
+                    <option value="2">Hardware</option>
+                </select>
+            </div>
+            <div class="prodimg">
+                <img src="/img/caja.png" alt="Prod" id="verimg">
+                <label for="" class="lblimg">Selecciona la imagen</label>
+                <center>
+                    <input type="file" name="" id="selecimg" accept=".jpg , .jpeg , .png">
+                </center>
+                <div class="imglabel">
+                    <input type="text" id="dirimg" readonly="true" size="20" placeholder="Nombre de la Imagen">
+                    <input type="text" id="url" readonly="true" size="20" placeholder="URL">
+                </div>
+
+                <div class="botones">
+                    <button id="btnInsertar">Insertar </button>
+                    <button id="btnBuscar">Buscar </button>
+                    <button id="btnActualizar">Actualizar</button>
+                    <button id="btnDeshabilitar">Estatus de Producto</button>
+                    <button id="btnLimpiar">Limpiar</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="pie">
+            <h4>Todos los derechos reservados @ Issac Puga Te amo yuli❣️</h4>
+        </div>
+
+</body>
+</html>

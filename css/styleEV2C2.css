@@ -2,12 +2,15 @@
     box-sizing: border-box;
     margin: 0  ;
     padding: 0 ;
+    max-width: 100%;
+    background-color: black;
+    font-family: sans-serif;
 }
 #contenedor{
    background-color: black;
    max-width: 100%;
    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: sans-serif;
 }
 
 #encabezado{
@@ -31,6 +34,7 @@
     padding: 10px;
     align-items: center;
     position: relative;
+    height: auto;
 }
 
 
@@ -39,6 +43,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+    height: auto;
 }
 .list_item{
     display: inline-block;
@@ -51,6 +56,7 @@
     padding: 20px;
     font-size: 1.1rem;
     position: relative;
+    height: auto;
 }
 .link:after{
     content: '';
@@ -82,6 +88,15 @@
     color: white;
 }
 
+.ad{
+   text-decoration: none;
+   color: white;
+   padding: 20px;
+   font-size: 1.1rem;
+   width: 200px;
+}
+
+
 /* Pagina de inicio */
 
 .rowindex{
@@ -90,7 +105,7 @@
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    height: auto;
+    height: 884px;
 }
 
 .indexS1{
@@ -152,6 +167,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: 884px;
 }
 
  .EmpreS1{
@@ -198,6 +214,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: auto;
+    margin-left: 30px;
  }
 
  .ProdS1 h1 {
@@ -209,30 +227,53 @@
     color: white;
     margin-bottom: 10px;
  }
-.softw{
-    display: flex;
+ .ProdS1  {
+   width: 100%;
+   height: auto;
 }
- .prod1 {
+
+ #prod {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    height: 230px;
+    height: 400px;
     width: 300px;
     border-width: 1px;
     border-style: solid;
     border-color: blueviolet;
     margin: 5px;
+    padding: 10px;
  }
 
- .prod1 label{
+ #nomProd{
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 150px;
+    margin-bottom: 30px;
+    padding-right: 120px;
+    font-size: 20px;
  }
 
- .btnCompras {
+ #img-prod {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 10px;
+ }
+ #descr-prod{
+   font-size: 15px;
+   width: 80%;
+   height: 100px;
+   text-align: justify;
+ }
+ #precio-prod{
+   font-size: 20px;
+   margin-right: 60px;
+ }
+#barraprod{
+   display: flex;
+}
+
+ #btnComprar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,100 +284,25 @@
     background-color: red;
     border-radius: 50px;
     margin-top: 0px;
-    margin-left: 170px;
- }
- .prod2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    height: 230px;
-    width: 300px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: blueviolet;
-    margin: 5px;
- }
- 
- .prod2 label{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 100px;
- }
-
-
- .prod3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    height: 230px;
-    width: 300px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: blueviolet;
-    margin: 5px;
- }
-
+    margin-left: 60px;
+ } 
  .hardw{
     display: flex;
- }
-
- .otros{
-    display: flex;
- }
-
- .prod3 label{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 160px;
- }
- .prod1 .label1{
-    padding-right: 161px;
+    height: auto;
+ } 
+ .softw{
+   display: flex;
+   height: auto;
 }
-
-.prod2 .label2{
-    padding-right: 97px;
-}
-
-.prod3 .label3 {
-    padding-right: 164px;
-}
-
-.prod1 .label4 {
-    padding-right: 124px;
-}
-.prod2 .label5 {
-    padding-right: 146px;
-}
-.prod3 .label6 {
-    padding-right: 143px;
-}
-.prod1 .label7{
-   padding-right: 142px;
-}
-.prod2 .label8 {
-    padding-right: 174px;
-}
-.prod3 .label9 {
-    padding-right: 169px;
-}
- .img-medida {
-    width: 250px;
-    height: 150px;
- }
-
  /*Pagina de Contacto*/
 
  .rowcontact{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 55px;
+    height: 780px;
  }
 
  .form{
@@ -357,6 +323,7 @@
  .form .Nombre label{
     margin-left: 1px;
     margin-right: 6px;
+    font-size: 25px;
  }
  .form .Nombre input{
     width: 227px;
@@ -370,6 +337,7 @@
  .form .correo label{
     margin-left: 10px;
     margin-right: 6px;
+    font-size: 25px;
  }
  .form .correo input{
     width: 224px;
@@ -385,6 +353,7 @@
  .form .comen label{
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 25px;
  }
  .form .comen textarea{
     width: 214px;
@@ -408,8 +377,9 @@
     color: black;
  }
 @media screen and (max-width: 700px) {
-   .menu_list, .rowindex,.rowEmpre,.EmpreS1img, .rowProd, .softw,.hardw,.otros, .rowcontact, .form, .nombre ,.comen,.comen{
+   .menu_list, .rowindex,.rowEmpre,.EmpreS1img, .rowProd, .softw,.hardw,.otros, .rowcontact, .form, .nombre ,.comen,.comen,#pie{
         flex-direction: column;
+        height: auto;
     }
     
 }
