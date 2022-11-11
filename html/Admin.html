@@ -20,6 +20,8 @@
                 <li class="list_item"><a href="/html/Empresa.html" class="link">Empresa</a></li>
                 <li class="list_item"><a href="/html/Productos.html" class="link">Producto</a></li>
                 <li class="list_item"><a href="/html/Contactos.html" class="link">Contacto</a></li>
+                <li class="list_item"><a href="/html/Contactos.html" class="link">Contacto</a></li>
+                <li class="list_item"><a href="/html/login.html" class="link">Iniciar Sesion</a></li>
                 
             </ul>
         </nav>
@@ -41,7 +43,10 @@
                 <textarea name="desc-prd" id="desc-prd" cols="30" rows="10" placeholder="Ingrese la descripcion"></textarea>
                 <br>
                 <label for="" class="lblA3">Estatus </label>
-                <input type="number" id="Estatus" placeholder="Ingrese el Precio" >
+                <select name="Estatus" id="Estatus">
+                    <option value="0">Habilitado</option>
+                    <option value="1">Desabilitado</option>
+                </select>
                 <br>
                 <h4>Seccion </h4>
                 <select name="Seccion" id="SeccionProducto">
@@ -50,10 +55,12 @@
                 </select>
             </div>
             <div class="prodimg">
-                <img src="/img/caja.png" alt="Prod" id="verimg">
+                <img src="/img/caja.png" alt="" id="verimg" height="150px" width="250px">
                 <label for="" class="lblimg">Selecciona la imagen</label>
                 <center>
-                    <input type="file" name="" id="selecimg" accept=".jpg , .jpeg , .png">
+                    <input type="file" name="selecimg" id="selecimg" accept=".jpg , .jpeg , .png">
+                    <br>
+                    <button id="cargar">Cargar Imagen</button>
                 </center>
                 <div class="imglabel">
                     <input type="text" id="dirimg" readonly="true" size="20" placeholder="Nombre de la Imagen">
@@ -64,11 +71,17 @@
                     <button id="btnInsertar">Insertar </button>
                     <button id="btnBuscar">Buscar </button>
                     <button id="btnActualizar">Actualizar</button>
-                    <button id="btnDeshabilitar">Estatus de Producto</button>
+                    <button id="btnEsta">Hablilitar o Desabilitar</button>
                     <button id="btnLimpiar">Limpiar</button>
                     
                 </div>
                 
+            </div>
+            <div class="preview">
+                <h1>Mis Productos</h1>
+                <div id="Mostrar">
+
+                </div>
             </div>
         </div>
 

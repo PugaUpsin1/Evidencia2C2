@@ -18,6 +18,8 @@
                 <li class="list_item"><a href="/html/Empresa.html" class="link">Empresa</a></li>
                 <li class="list_item"><a href="/html/Productos.html" class="link">Producto</a></li>
                 <li class="list_item"><a href="/html/Contactos.html" class="link">Contacto</a></li>
+                <li class="list_item"><a href="/html/login.html" class="link">Iniciar Sesion</a></li>
+                
             </ul>
         </nav>
         <div class="rowcontact">
@@ -26,18 +28,39 @@
                 <h1>Informacion de Contacto</h1>
                 <div class="Nombre">
                     <label for="">Nombre: </label>
-                    <input type="text" placeholder="Escriba su Nombre."> 
+                    <input id="name" type="text" placeholder="Escriba su Nombre." style="color: white;"> 
                 </div>
                 <div class="correo">
                     <label for="">Correo: </label>
-                    <input type="text" placeholder="Escriba su Correo.">
+                    <input id="email" type="email" placeholder="Escriba su Correo." style="color: white;">
                 </div>
                 <div class="comen">
                     <label for="">Comentario: </label>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escriba aqui su comnetario."></textarea>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escriba aqui su comnetario." style="color: white;"></textarea>
                 </div>
-                <a href="http://" class="btnEnviar">Enviar</a>
+                <a href="" class="btnEnviar" onclick="Validar()">Enviar</a>
                </section>
+               <script>
+                var name = "";
+                var com = "";
+                var em = "";
+                function leerinputs(){
+                 name = document.getElementById('name').value;
+                 com = document.getElementById('comentarios').value;
+                 em = document.getElementById('email').value;
+                }
+                
+                function Validar(){
+                    leerinputs();
+                    if(name == "" || com == "" || em == "" ){
+                        alert("Campos vacios");
+                    }else{
+                        alert("Se envio formulario");
+                    }
+                }
+
+
+               </script>
                       
                 
         </div>

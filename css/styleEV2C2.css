@@ -286,13 +286,14 @@
     margin-top: 0px;
     margin-left: 60px;
  } 
- .hardw{
+ #hardw{
     display: flex;
-    height: auto;
+    height: 410px;
  } 
- .softw{
+ #softw{
    display: flex;
    height: auto;
+   height: 410px;
 }
  /*Pagina de Contacto*/
 
